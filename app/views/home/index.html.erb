@@ -1,0 +1,94 @@
+<div class="main">
+    <div class="instruction_container">
+        <div class="instruction_section">
+            <h3 class="instruction-heading"> Tic Tac Toe Game Instructions</h3>
+            <br><br>
+            <ul class="list_container">
+                
+                <li>
+                    The player that gets to play first will get the <b>X</b> mark and the player that gets to play second will get the <b>O</b> mark.
+                </li>
+                <br>
+                <li>One of the players gets three of marks in a row <b>vertically, horizontally, or diagonally</b> i.e. that player wins the game.</li>
+                <br>
+                <li>If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a <b>draw/tie</b>.</li>
+            </ul>  
+        </div>
+
+    </div>
+    <div class="phone_container">
+        <div class="phone">
+            <div class="speakers">
+                <i class="fas fa-ellipsis-h" ></i>
+                <i class="fas fa-ellipsis-h" id="speakers_icons"></i>
+            </div>
+            <div class="screen">
+                <div class="network_bar">
+                    <div class="signal_icons_container">
+                        <i class="fas fa-signal custom_icons" ></i>
+                        <i class="fas fa-signal custom_icons" ></i>
+                        <i class="fas fa-wifi custom_icons" ></i>
+                    </div>
+                    <div class="time_container">
+                        <span class="custom_icons" id="time_section"></span>
+                    </div>
+                </div>
+                <section class="game_section">
+
+                    <h1 class="game_heading">TIC TAC TOE</h1>
+                    <br>
+                    <p id="print"></p>
+                    <br>
+                    <input type="text" id="input_one" onclick=
+                        "change_value_one(); checking_winner();" readonly>
+            
+                    <input type="text" id="input_two" onclick=
+                        "change_value_two(); checking_winner();" readonly>
+            
+                    <input type="text" id="input_three" onclick=
+                        "change_value_three(); checking_winner();" readonly>
+                    <br><br>
+        
+                    <input type="text" id="input_four" onclick=
+                        "change_value_four(); checking_winner();" readonly>
+                        
+                    <input type="text" id="input_five" onclick=
+                        "change_value_five(); checking_winner();" readonly>
+            
+                    <input type="text" id="input_six" onclick=
+                        "change_value_six(); checking_winner();" readonly>
+                    <br><br>
+            
+                    <input type="text" id="input_seven" onclick=
+                        "change_value_seven(); checking_winner();" readonly>
+            
+                    <input type="text" id="input_eight" onclick=
+                        "change_value_eight(); checking_winner();" readonly>
+            
+                    <input type="text" id="input_nine" onclick=
+                        "change_value_nine(); checking_winner();" readonly>
+            
+                    <br><br><br>
+                    
+                    <button class="button-section" onclick="replay()">
+                        REPLAY <i class="fas fa-redo"></i>
+                    </button>
+            
+                   
+                </section>
+                <div class="functional_icons_container">
+                    <i class="fas fa-arrow-left custom_icons" ></i>
+                    <i class="fas fa-square custom_icons"  ></i>
+                    <i class="fas fa-bars custom_icons" ></i>
+                </div>
+                </div>
+                    <div  class="logo_container">
+                        <p class="logo">PlanetSpark</p>
+                    </div>
+                  
+                </div>
+                
+        </div>
+    </div>
+    
+</div>
