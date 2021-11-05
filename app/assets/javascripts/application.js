@@ -1,3 +1,4 @@
+// geting time, and displaying that into network bar
 setInterval(function () {
   let time_varable = new Date();
   let only_time = String(time_varable).substring(16, 24);
@@ -172,8 +173,9 @@ function checking_winner() {
     window.alert("Player 0 won");
   }
 
-  // Checking of Player 0 finsh
-  // Here, Checking about Tie
+  // Checking of Player O finsh
+
+  //  Checking about Tie
   else if (
     (input_one == "X" || input_one == "O") &&
     (input_two == "X" || input_two == "O") &&
@@ -188,7 +190,7 @@ function checking_winner() {
     document.getElementById("print").innerHTML = "Match Tie";
     window.alert("Match Tie");
   } else {
-    // Here, Printing Result
+    //Printing Result
     if (flag == 1) {
       document.getElementById("print").innerHTML = "Player X Turn";
     } else {
@@ -196,9 +198,10 @@ function checking_winner() {
     }
   }
 }
+// finish checking function
 
 // Here onwards, functions check turn of the player
-// and put accordingly value X or 0
+// and put accordingly value X or O
 let flag = 1;
 function change_value_one() {
   if (flag == 1) {

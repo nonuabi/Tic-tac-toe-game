@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+// home body
 .main {
   display: flex;
   flex-direction: row;
   background-color: #e5e5e5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+// left side - instruction section
 .instruction_container {
   width: 70%;
   height: 100vh;
@@ -40,6 +42,9 @@
 li {
   list-style: none;
 }
+// finish instruction section
+
+// right side - phone section
 .phone_container {
   width: 70%;
   height: 100vh;
@@ -47,6 +52,7 @@ li {
   align-items: center;
   justify-content: center;
 }
+// phone dummy
 .phone {
   width: 20vw;
   height: 80vh;
@@ -57,12 +63,22 @@ li {
   justify-content: center;
   box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, 0.66);
 }
-.speaker {
-  margin-bottom: 3px;
+// phone dummy - logo section
+.logo_container {
+  height: 8%;
+  display: flex;
+  align-items: center;
+  margin-bottom: -25px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  margin-bottom: -18px;
 }
-#speakers_icons {
-  margin-left: -4px;
-}
+// finish phone dummy css
+
+// phone screen
 .screen {
   width: 86%;
   height: 85%;
@@ -73,12 +89,6 @@ li {
   background: #fff;
   flex-direction: column;
   justify-content: space-between;
-}
-.game_heading {
-  color: black;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 .network_bar {
   height: 6%;
@@ -93,6 +103,18 @@ li {
   display: flex;
   align-items: center;
 }
+.speaker {
+  margin-bottom: 3px;
+}
+#speakers_icons {
+  margin-left: -4px;
+}
+.game_heading {
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .custom_icons {
   margin: 0 0.3rem;
 }
@@ -105,19 +127,6 @@ li {
   background-color: black;
   justify-content: space-around;
 }
-.logo_container {
-  height: 8%;
-  display: flex;
-  align-items: center;
-  margin-bottom: -25px;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-  color: black;
-  margin-bottom: -18px;
-}
-
 #input_one,
 #input_two,
 #input_three,
@@ -135,7 +144,7 @@ li {
   border: none;
   background-color: #e5e5e5;
 }
-
+// replay button
 .button-section {
   width: 120px;
   height: 40px;
@@ -147,6 +156,9 @@ li {
   cursor: pointer;
   border: none;
 }
+input:hover {
+  cursor: pointer;
+}
 
 #print {
   font-family: ui-monospace;
@@ -154,6 +166,4 @@ li {
   font-size: 20px;
 }
 
-input:hover {
-  cursor: pointer;
-}
+// finish screen
